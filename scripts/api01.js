@@ -19,27 +19,3 @@ app.message('hello', async ({ message, say }) => {
   await app.start(process.env.PORT || 3000);
   console.log('⚡️ Bolt app is running!');
 })();
-
-
-// /*
-//
-//
-//
-//
-//
-//
-// const axios = require('axios')
-// const api = axios.create({
-//   baseURL: 'https://slack.com/api',
-//   headers: {
-//     Authorization: `Bearer ${process.env.SLACK_TOKEN}`
-//   }
-// })
-//
-// api.post(`/chat.postMessage`, {
-//   text: 'API でもメッセージを送信したい! ',
-//   channel: "general"
-// }).then(res => {
-//   console.log(res.data) // レスポンスを表示
-// })
-// */
